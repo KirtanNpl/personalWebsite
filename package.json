@@ -4,12 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "tsc && next build",
-    "start": "next start",
-    "lint": "eslint app --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format:check": "prettier --check .",
-    "format": "prettier --write .",
-    "prepare": "husky install"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",

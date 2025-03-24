@@ -1,9 +1,10 @@
 import { useState, useEffect, RefObject } from "react";
 
-export default function useScrollActive(ref: RefObject<HTMLElement>) {
+export default function useScrollActive(ref: RefObject<HTMLElement> | null) {
   const [state, setState] = useState(false);
 
   useEffect(() => {
+    if (!ref?.current) return;
     const scrollActive = () => {
       const scrollY = window.pageYOffset;
 
