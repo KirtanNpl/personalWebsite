@@ -6,30 +6,30 @@ import gsap from "gsap"
 export default function MouseSection() {
   const cursorRef = useRef(null)
 
-  // useEffect(() => {
-  //   document.addEventListener("mousemove", (e) => {
-  //     const mouseX = e.clientX
-  //     const mouseY = e.clientY
-  //     gsap.to(cursorRef.current, {
-  //       x: mouseX,
-  //       y: mouseY,
-  //       opacity: 1,
-  //       delay: 0,
-  //     })
-  //   })
+  useEffect(() => {
+    document.addEventListener("mousemove", (e) => {
+      const mouseX = e.clientX
+      const mouseY = e.clientY
+      gsap.to(cursorRef.current, {
+        x: mouseX,
+        y: mouseY,
+        opacity: 1,
+        delay: 0,
+      })
+    })
 
-  //   const hideCursor = () => {
-  //     gsap.to(cursorRef.current, { opacity: 0 })
-  //   }
+    const hideCursor = () => {
+      gsap.to(cursorRef.current, { opacity: 0 })
+    }
 
-  //   const showCursor = () => {
-  //     gsap.to(cursorRef.current, { opacity: 1 })
-  //   }
+    const showCursor = () => {
+      gsap.to(cursorRef.current, { opacity: 1 })
+    }
 
-  //   document.addEventListener("mouseleave", hideCursor)
-  //   document.addEventListener("mousedown", hideCursor)
-  //   document.addEventListener("mouseup", showCursor)
-  // }, [])
+    document.addEventListener("mouseleave", hideCursor)
+    document.addEventListener("mousedown", hideCursor)
+    document.addEventListener("mouseup", showCursor)
+  }, [])
   return (
     <div
       ref={cursorRef}
