@@ -6,7 +6,7 @@ import Circle from "@/public/assets/about/circle.svg"
 import Signs from "@/public/assets/about/signs.svg"
 import Star from "@/public/assets/about/star.svg"
 import Triangle from "@/public/assets/about/triangle.svg"
-import ShinThantImage from "@/public/kirtan.jpg"
+//import ShinThantImage from "@/public/kirtan.jpg"
 import { useSectionStore } from "@/store/section"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
@@ -220,7 +220,7 @@ export default function AboutSection() {
                 height={300}
                 priority
                 alt="Big Daddy profile"
-                src={ShinThantImage}
+                src="/kirtan.jpg"
               />
 
               <div className="absolute hidden lg:block -top-12 -right-12">
