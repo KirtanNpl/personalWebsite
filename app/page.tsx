@@ -8,7 +8,7 @@ export default function Home() {
       <MouseSection />
       <HeroSection />
       <AboutSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
     </main>
   )
 }
