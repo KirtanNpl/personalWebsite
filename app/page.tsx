@@ -3,7 +3,7 @@ import ContactSection from "@/components/sections/ContactSection"
 import HeroSection from "@/components/sections/HeroSection"
 import MouseSection from "@/components/sections/MouseSection"
 export default function Home() {
-  return (
+  return ( 
     <main id="main">
       <MouseSection />
       <HeroSection />
