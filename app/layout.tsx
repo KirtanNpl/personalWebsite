@@ -45,7 +45,7 @@ export default function RootLayout({
     <html lang="en">
       <Analytics />
       <body className={jost.className}>
-        <Loader />
+        {/* <Loader /> */}
 
         <ThemeProvider
           attribute="class"
